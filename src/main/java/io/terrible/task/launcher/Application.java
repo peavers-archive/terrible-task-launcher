@@ -1,9 +1,11 @@
 /* Licensed under Apache-2.0 */
-package io.terrible.template;
+package io.terrible.task.launcher;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.task.launcher.annotation.EnableTaskLauncher;
 
+@EnableTaskLauncher
 @SpringBootApplication
 public class Application {
 

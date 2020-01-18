@@ -5,8 +5,8 @@ plugins {
     id 'java'
 }
 
-group = 'io.terrible.template'
-archivesBaseName = 'terrible-template'
+group = 'io.terrible.task.launcher'
+archivesBaseName = 'terrible-task-launcher'
 sourceCompatibility = '11'
 
 repositories {
@@ -34,7 +34,10 @@ ext {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.cloud:spring-cloud-starter-task'
+    implementation 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
+
+    implementation 'org.springframework.cloud:spring-cloud-deployer-local:1.3.7.RELEASE'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
