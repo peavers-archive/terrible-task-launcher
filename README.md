@@ -1,3 +1,3 @@
-# Terrible Template
+# Terrible Task Launcher
 
-Just a repository template setup with the bits I like.
+Listens to a Rabbit queue and starts tasks as they come in the pipeline. 
