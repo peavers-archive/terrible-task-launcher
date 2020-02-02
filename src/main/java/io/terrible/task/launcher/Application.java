@@ -8,7 +8,6 @@ import org.springframework.cloud.task.launcher.annotation.EnableTaskLauncher;
 @EnableTaskLauncher
 @SpringBootApplication
 public class Application {
-
   public static void main(final String[] args) {
     SpringApplication.run(Application.class, args);
   }
