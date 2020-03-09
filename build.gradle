@@ -37,7 +37,7 @@ ext {
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-task'
     implementation 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
-    implementation 'org.springframework.cloud:spring-cloud-deployer-local:2.2.0.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-deployer-local:2.2.1.RELEASE'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
