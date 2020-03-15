@@ -7,3 +7,6 @@ spring:
       bindings:
         input:
           destination: terrible-task-launcher
+    deployer:
+      local:
+        maximum-concurrent-tasks: 5
