@@ -1,3 +1,6 @@
+server:
+  port: 8084
+
 spring:
   application:
     name: terrible-task-launcher
@@ -7,9 +10,21 @@ spring:
       bindings:
         input:
           destination: terrible-task-launcher
-        output:
-          destination: queue.pretty.log.messages
     deployer:
       local:
         maximum-concurrent-tasks: 5
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoint:
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
