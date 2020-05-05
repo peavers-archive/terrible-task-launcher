@@ -12,7 +12,7 @@ spring:
           destination: terrible-task-launcher
     deployer:
       local:
-        maximum-concurrent-tasks: 5
+        maximum-concurrent-tasks: 1
 
 management:
   endpoints:
